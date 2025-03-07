@@ -18,7 +18,15 @@
 	<test name="Checkout">
 		<classes>
 
+			<class name="Youfoodlabs.Youfoodlabs.CartPage" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="CartPage">
+		<classes>
+
 			<class name="Youfoodlabs.Youfoodlabs.Checkout" />
 		</classes>
 	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

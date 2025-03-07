@@ -15,35 +15,12 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>17</maven.compiler.source> <!-- Updated Java
-		version -->
-		<maven.compiler.target>17</maven.compiler.target> <!-- Updated Java
-		version -->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
 	<dependencies>
-
-
-		<!-- Drivermanager-->
-		<!--
-		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>5.5.3</version>
-		</dependency>
-
-		<!-- selenium -->
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.10.0</version>
-		</dependency>
-
-		<!-- TestNG -->
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<!-- Testing Framework -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -51,24 +28,39 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Selenium and WebDriver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.5.3</version>
+		</dependency>
 
-		<!-- Apache poi for Excel data -->
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<!-- Utility Libraries -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
 			<version>5.2.2</version>
 		</dependency>
-
-		<!-- Apache poi for Excel data -->
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.2</version>
 		</dependency>
-
-
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.9</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -82,8 +74,9 @@
 					<configuration>
 						<verbose>true</verbose>
 						<fork>true</fork>
-						<executable>${JAVA_HOME}/bin/javac</executable>
-						<compilerVersion>1.3</compilerVersion>
+						<executable>${JAVA_HOME}/javac</executable>
+						<source>17</source>
+						<target>17</target>
 					</configuration>
 				</plugin>
 
