@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Homepage(failed)">
+    <classes>
+      <class name="Youfoodlabs.Youfoodlabs.Homepage">
+        <methods>
+          <include name="TC_04"/>
+          <include name="LaunchBrowser"/>
+          <include name="TC_03"/>
+          <include name="TC_02"/>
+          <include name="Complete_Test"/>
+        </methods>
+      </class> <!-- Youfoodlabs.Youfoodlabs.Homepage -->
+    </classes>
+  </test> <!-- Homepage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

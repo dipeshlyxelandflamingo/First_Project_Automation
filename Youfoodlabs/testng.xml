@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Homepage_Tab">
+		<classes>
+			<class name="Youfoodlabs.Youfoodlabs.Homepage_Tab" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Homepage">
+		<classes>
+
+			<class name="Youfoodlabs.Youfoodlabs.Homepage" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Checkout">
+		<classes>
+
+			<class name="Youfoodlabs.Youfoodlabs.Checkout" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
